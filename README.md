@@ -32,6 +32,11 @@ npm install
 3. **Configurar variables de entorno**
    Crea un archivo `.env` en la raíz del proyecto:
 
+| Variable       | Descripción               | Valor por defecto        |
+| -------------- | ------------------------- | ------------------------ |
+| `PORT`         | Puerto del servidor       | `3001`                   |
+| `PRIMEAPI_KEY` | API key para conversiones | 7d05aeb5245511fb48fd2120 |
+
 ## 🏃‍♂️ Ejecución
 
 ```bash
@@ -126,12 +131,3 @@ src/
     └── numbers.service.ts
     └── numbers.module.ts
 ```
-
-## 🔧 Configuración
-
-### Variables de Entorno
-
-| Variable       | Descripción               | Valor por defecto        |
-| -------------- | ------------------------- | ------------------------ |
-| `PORT`         | Puerto del servidor       | `3001`                   |
-| `PRIMEAPI_KEY` | API key para conversiones | 7d05aeb5245511fb48fd2120 |
