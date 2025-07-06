@@ -32,10 +32,10 @@ npm install
 3. **Configurar variables de entorno**
    Crea un archivo `.env` en la raíz del proyecto:
 
-| Variable       | Descripción               | Valor por defecto        |
-| -------------- | ------------------------- | ------------------------ |
-| `PORT`         | Puerto del servidor       | `3001`                   |
-| `PRIMEAPI_KEY` | API key para conversiones | 7d05aeb5245511fb48fd2120 |
+| Variable           | Descripción               | Valor por defecto          |
+| ------------------ | ------------------------- | -------------------------- |
+| `PORT`             | Puerto del servidor       | `3000`                     |
+| `EXCHANGE_API_KEY` | API key para conversiones | `7d05aeb5245511fb48fd2120` |
 
 ## 🏃‍♂️ Ejecución
 
@@ -43,13 +43,11 @@ npm install
 npm run start:dev
 ```
 
-La aplicación estará disponible en: `http://localhost:3001`
+La aplicación estará disponible en: `http://localhost:3000`
 
 ## 📚 Endpoints de la API
 
 ### 1. Conversión de Monedas
-
-**GET** `/conversion`
 
 Convierte una cantidad de una moneda a otra usando tasas de cambio en tiempo real.
 
@@ -62,7 +60,7 @@ Convierte una cantidad de una moneda a otra usando tasas de cambio en tiempo rea
 **Ejemplo de petición:**
 
 ```bash
-"http://localhost:3001/conversion?from=USD&to=CLP&amount=100"
+"http://localhost:3000/conversion?from=USD&to=CLP&amount=100"
 ```
 
 **Respuesta exitosa:**
@@ -86,30 +84,26 @@ Convierte una cantidad de una moneda a otra usando tasas de cambio en tiempo rea
 
 ### 2. Gestión de Cumpleaños
 
-**GET** `/birthdays`
-
 Obtiene información sobre cumpleaños.
 
 **Ejemplo:**
 
 ```bash
-"http://localhost:3001/birthday/getDaysUntilMyBirthday?name=Sebastian&birthdate=2002-07-22"
+"http://localhost:3000/birthday/getDaysUntilMyBirthday?name=Sebastian&birthdate=2002-07-22"
 ```
 
 ```bash
-"http://localhost:3001/birthday/getRindegastinosBirthdays"
+"http://localhost:3000/birthday/getRindegastinosBirthdays"
 ```
 
 ### 3. Operaciones Numéricas
-
-**GET** `/numbers`
 
 Realiza operaciones matemáticas.
 
 **Ejemplo:**
 
 ```bash
-"http://localhost:3001/numbers/getTheNumber?first=4&second=3"
+"http://localhost:3000/numbers/getTheNumber?first=4&second=3"
 ```
 
 ## 🏗️ Estructura del Proyecto
