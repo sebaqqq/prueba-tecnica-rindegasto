@@ -19,7 +19,7 @@ API REST completa desarrollada con NestJS que incluye funcionalidades de convers
 1. **Clonar el repositorio**
 
 ```bash
-git clone <https://github.com/sebaqqq/prueba-tecnica-rindegasto.git>
+git clone https://github.com/sebaqqq/prueba-tecnica-rindegasto.git
 cd prueba-rindegastos
 ```
 
