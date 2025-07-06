@@ -14,6 +14,12 @@ API REST completa desarrollada con NestJS que incluye funcionalidades de convers
 - npm
 - API key de PrimeAPI (para conversiones de moneda)
 
+## Probar Ahora
+
+```bash
+https://prueba-tecnica-rindegasto-production.up.railway.app/
+```
+
 ## 🛠️ Instalación
 
 1. **Clonar el repositorio**
